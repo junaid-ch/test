@@ -1,10 +1,10 @@
 <?xml version="1.0"?>
-<project name="CPT" basedir="./CPT" xmlns:ac="antlib:net.sf.antcontrib">
+<project name="CPT" basedir="." xmlns:ac="antlib:net.sf.antcontrib">
 
 	<description>TestAutomationGuru - Continuous Performance Testing Process</description>
 
 	<!-- Read the test properties from build.propertis -->
-	<property file="${basedir}/build.properties" />
+	<property file="build.properties" />
 
 	<!-- System & other ant properties -->
 	<property environment="env" />
