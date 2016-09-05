@@ -11,6 +11,26 @@
       <stringProp name="TestPlan.user_define_classpath"></stringProp>
     </TestPlan>
     <hashTree>
+      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
+        <collectionProp name="Arguments.arguments">
+          <elementProp name="threadgroup.count" elementType="Argument">
+            <stringProp name="Argument.name">threadgroup.count</stringProp>
+            <stringProp name="Argument.value">${__P(threadgroup.count,1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="threadgroup.rampup" elementType="Argument">
+            <stringProp name="Argument.name">threadgroup.rampup</stringProp>
+            <stringProp name="Argument.value">${__P(threadgroup.rampup,1)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+          <elementProp name="threadgroup.duration" elementType="Argument">
+            <stringProp name="Argument.name">threadgroup.duration</stringProp>
+            <stringProp name="Argument.value">${__P(threadgroup.duration,5)}</stringProp>
+            <stringProp name="Argument.metadata">=</stringProp>
+          </elementProp>
+        </collectionProp>
+      </Arguments>
+      <hashTree/>
       <ThreadGroup guiclass="ThreadGroupGui" testclass="ThreadGroup" testname="Thread Group" enabled="true">
         <stringProp name="ThreadGroup.on_sample_error">continue</stringProp>
         <elementProp name="ThreadGroup.main_controller" elementType="LoopController" guiclass="LoopControlPanel" testclass="LoopController" testname="Loop Controller" enabled="true">
@@ -80,26 +100,6 @@
         </ResultCollector>
         <hashTree/>
       </hashTree>
-      <Arguments guiclass="ArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
-        <collectionProp name="Arguments.arguments">
-          <elementProp name="threadgroup.count" elementType="Argument">
-            <stringProp name="Argument.name">threadgroup.count</stringProp>
-            <stringProp name="Argument.value">${__P(threadgroup.count,1)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="threadgroup.rampup" elementType="Argument">
-            <stringProp name="Argument.name">threadgroup.rampup</stringProp>
-            <stringProp name="Argument.value">${__P(threadgroup.rampup,1)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-          <elementProp name="threadgroup.duration" elementType="Argument">
-            <stringProp name="Argument.name">threadgroup.duration</stringProp>
-            <stringProp name="Argument.value">${__P(threadgroup.duration,5)}</stringProp>
-            <stringProp name="Argument.metadata">=</stringProp>
-          </elementProp>
-        </collectionProp>
-      </Arguments>
-      <hashTree/>
     </hashTree>
   </hashTree>
 </jmeterTestPlan>
