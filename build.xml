@@ -101,7 +101,7 @@
 	</taskdef>
 	<target name="generate-chart">
 			<!-- copy this jar to the JMETER_HOME/lib/ext folder -->
-			<copy file="${lib.dir}/CMDRunner.jar" tofile="${jmeter.home}/lib/ext/CMDRunner.jar"/>
+			<copy file="${lib.dir}/CMDRunner.jar" tofile="${jmeter.home}/lib/ext/CMDRunner.jar"/>-->
 		    <ac:for param="reportType" list="LatenciesOverTime,TimesVsThreads,ResponseTimesOverTime,ThreadsStateOverTime,TransactionsPerSecond,ResponseTimesPercentiles,ResponseTimesDistribution">
 			      <sequential>
 				        <java  jar="${jmeter.home}/lib/ext/CMDRunner.jar" fork="true">
