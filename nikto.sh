@@ -1,1 +1,1 @@
-jmeter -Jjmeter.save.saveservice.output_format=xml -n -t test1.jmx -l test1.jtl
+/home/junaid.ahmad/Downloads/nikto-master/program/nikto.pl -D v -o r1.html -h bitf12m027.apphb.com
